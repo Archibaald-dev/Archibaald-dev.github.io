@@ -1,0 +1,363 @@
+/*Body*/
+
+body {
+    font-family: 'Fira Code', monospace;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #1e1e1e;
+    justify-content: space-between;
+}
+
+body>* {
+    user-select: none;
+}
+
+/*Sidebars components*/
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar>* {
+    color: #fff;
+}
+
+.sideone {
+    background-color: #252526;
+    width: 20%;
+    padding: 8px 0 8px 4%;
+}
+
+.sidetwo {
+    background-color: #333;
+    width: 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/*List*/
+
+ul {
+    margin: 0;
+    padding: 10px 0 0 0;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Icons*/
+
+ul li svg, .profileIcon {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    height: 32px;
+    width: 100%;
+    list-style: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-left: 3px solid #333;
+    border-right: 3px solid #333;
+}
+
+ul li input, .profileButton {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.SideBarIcon {
+    width: 100%;
+    height: 32px;
+    fill: #b4b4b4;
+}
+
+.SideBarIcon:hover {
+    fill: #fff !important;
+}
+
+/*Selected button*/
+
+.selected {
+    border-left: 3px solid #fff;
+}
+
+.lightup {
+    fill: #fff !important;
+}
+
+/*Profile button*/
+
+.profileButtonContainer {
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+}
+
+/*Info bubble*/
+
+.IsNotDisplayed {
+    display: none !important;
+}
+
+.pp {
+    background-image: url("../images/pp.jpg");
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.InfoBubble {
+    position: absolute;
+    bottom: 9vh;
+    background: #007acc;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 7px;
+    width: 450px;
+}
+
+.InfoBubble h1 {
+    line-height: 100px;
+    width: auto;
+}
+
+.ContentInfoBubble {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TextInfoBubble {
+    display: flex;
+    flex-direction: column;
+}
+
+.InfoBubble::after {
+    content: "";
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 18px solid #007acc;
+    position: absolute;
+}
+
+/* Global bar display */
+
+.MENU, .SHARE {
+    font-size: 14px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    color: rgb(222, 222, 222);
+}
+
+.SHARE .BarTittle, .MENU .BarTittle {
+    padding: 8px 24px;
+}
+
+
+
+
+.MENU a, .SHARE a {
+    color: rgb(222, 222, 222);
+    background-color: rgb(60, 60, 60);
+    text-decoration: none;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    margin: 0px 24px 16px 24px;
+}
+
+/* MENU bar display */
+
+.MenuItem, .MenuSubItem {
+    display: flex;
+}
+
+.Mini_Menu {
+    display: flex;
+    font-size: 12px;
+    padding: 4px 2px;
+    flex-direction: row;
+    border-top: 1px solid rgb(60, 60, 60);
+    cursor: pointer;
+}
+
+.MenuContent {
+    padding-bottom: 32px;
+}
+
+.MenuSubItem {
+    padding-left: 32px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.MenuItem {
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: row;
+}
+
+.HoveredMenuItem:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.HTMLsvgContainer {
+    fill: #b65233;
+    height: 16px;
+    width: 16px;
+    margin-right: 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SVGcontainer {
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+}
+
+.menu_button, .displaypage {
+    cursor: pointer;
+    position: absolute;
+    width: 77%;
+    padding: 0;
+    height: 19px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.LevelBar {
+    height: 1px;
+    width: 100%;
+    position: relative;
+}
+
+.Progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    background-color: rgb(14, 99, 156);
+}
+
+.Progress05 {
+    transform: scaleX(0.5);
+}
+
+.Progress08 {
+    transform: scaleX(0.8);
+}
+
+.Progress09 {
+    transform: scaleX(0.9);
+}
+
+.Progress01 {
+    transform: scaleX(1);
+}
+
+.ProgressShadow {
+    flex: 1 1 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(14, 99, 156);
+    opacity: 0.2;
+}
+
+.LevelItem {
+    position: relative;
+    display: flex;
+    width: 80%;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.Align{
+    width: 100%;
+}
+
+/* SHARE bar display */
+.BarText {
+    padding: 0px 24px;
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+
+/* Body display */
+
+.body_display {
+    margin-left: 24%;
+}
+
+.Comment {
+    margin-right: 4px; 
+    white-space: nowrap; 
+    color: rgb(105, 152, 84);
+}
+
+.lightblue {
+    color: #9dd0f0;
+}
+
+.white {
+    color: rgb(226, 226, 226);
+}
+
+.orange {
+    color: #b67455;
+}
+
+.darkblue {
+    color: #477dc0;
+}
+
+.grey {
+    color: #6c7070;
+}
+
+.home_content {
+    display: block;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    flex-direction: column;
+}
+
+.home_content p {
+    margin: 0;
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+.subtext {
+    margin-left: 31px;
+}
