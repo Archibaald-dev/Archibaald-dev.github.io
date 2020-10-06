@@ -65,9 +65,9 @@ ul li svg, .profileIcon {
     height: 32px;
     width: 100%;
     list-style: none;
-    border: none;
     background-color: transparent;
     outline: none;
+    border-color: transparent;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
 }
