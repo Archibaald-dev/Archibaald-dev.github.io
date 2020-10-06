@@ -68,11 +68,11 @@ ul li svg, .profileIcon {
     border: none;
     background-color: transparent;
     outline: none;
-    border-left: 3px solid #333;
-    border-right: 3px solid #333;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
 }
 
-ul li input, .profileButton {
+ul li div, .profileButton {
     cursor: pointer;
     position: absolute;
     width: 100%;
@@ -116,8 +116,7 @@ ul li input, .profileButton {
     display: none !important;
 }
 
-.pp {
-    background-image: url("../images/pp.jpg");
+.pp img{
     width: 150px;
     height: 150px;
     background-position: center;
